@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>RESILIA/adote aqui</h1>
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="sobre.html"> SOBRE </a></li>
+                    <li><a href="contato.html"> CONTATO </a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titulo">
+            Formulário
+        </div>
+        <form>
+
+                <div>
+                    <label for="nomesobrenome" class="input-padrão">Nome Completo:</label>
+                    <input type="text" id="nomesobrenome" placeholder="Nome Completo" class="input-padrão" required>
+                
+                    <label for="email" class="input-padrão">Email:</label>
+                    <input type="text" id="email" placeholder="email" class="input-padrão" required>
+                
+                    <label for="telefone" class="input-padrão">Telefone:</label>   
+                    <input type="tel" id="telefone" placeholder="(xx)xxxxx-xxxx" class="input-padrão" required>
+
+                    <label for="msg" class="input-padrão">Deixe sua mensagem:</label> 
+                    <textarea id="msg" class="input-padrão">Escreva aqui</textarea>
+                </div>
+                
+                <div>
+                    <p>Como prefere o nosso contato?</p>
+                    <label for="radio-email" class="input-padrão">
+                        <input type="radio" name="contato" value="email" id="radio-email">
+                        Email
+                    </label>
+                
+                    <label for="radio-telefone" class="input-padrão">
+                        <input type="radio" name="contato" value="telefone" id="radio-telefone"> 
+                        Telefone
+                    </label>
+                
+                    <label for="radio-whatsapp" class="input-padrão">
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+                        WhatsApp
+                    </label>
+                </div>
+
+                <p>Gostaria de receber nossas novidades por email?</p>
+
+                <label class="checkbox" class="input-padrão"> 
+                    <input type="checkbox">
+                </label>
+
+                <br>
+
+                <input type="submit" value="Enviar formulário" checked>
+        </form>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; Copyright Hugo Legramandi - 2021</p>
+    </footer>
+
+</body>
+</html>
