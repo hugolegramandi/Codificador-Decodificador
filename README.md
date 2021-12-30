@@ -2,4 +2,4 @@
 RESILIA - Projeto Módulo 1 - Adote Aqui
 
 Acesse o projeto aqui:
-https://hugolegramandi.github.io/resilia_modulo1/
+https://hugolegramandi.github.io/resilia_adote_aqui/
