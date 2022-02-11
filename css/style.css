@@ -1,88 +1,151 @@
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  font-size: 20px;
+body{
+    background-image: url(../img/fundo_branco.jpg);
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+header{
+    display: flex;
+    width: 100%;
+    padding: 50px 0;
+    margin: auto;
+    background-image: url(../img/fundo_preto.jpg);
+    justify-content: center
 }
 
-.titulo {
-  margin: 60px auto;
-  font-size: 48px;
+nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.fieldset {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  border-radius: 5%;
-  padding: 30px;
-  height: auto;
+header h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+    margin: auto 0;
+    transition: 1s color;
 }
 
-.mensagem {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0 20px 0;
+header ul{
+    display: flex;
 }
 
-#mensagem {
-  height: 100px;
-  margin-top: 15px;
+header ul li{
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: 1s background;
 }
 
-.escolhaDecoder {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0 20px 0;
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.escolhaDecoder input {
-  margin-top: 15px;
+header ul li:hover{
+    background-color: #ffd000;
 }
 
-.incremento {
-  display: none;
-  flex-direction: column;
+header h1:hover{
+    color: #ffd000;
 }
 
-#incremento {
-  width: 50px;
+main{
+    background-image: url(../img/fundo_amarelo.jpg);
+    width: 70%;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.escolhaBtn {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0 20px 0;
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
 }
 
-.escolhaBtn > * {
-  margin: 15px 0 0 0;
+div{
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+
+}
+
+label, input, p{
+    font-size: 24px;
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+footer {
+	text-align: center;
+	background-color: black;
+	padding: 50px;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.incremento{
+    display: none;
+}
+
+.texto{
+    height: 50px;
+    margin: 35px 0 0 0;
 }
 
 .btn {
-  font-family: monospace;
-  width: 454px;
-  height: 68px;
-  border-radius: 20px;
-  color: rgb(34, 32, 32);
-  font-size: 1rem;
-  cursor: pointer;
-}
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    margin: 5px;
+  }
 
-.btn:hover {
-  transform: scale(1.1);
-  transition: all .3s ease-in-out;
-}
+  .btn span {
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .btn span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .btn:hover span {
+    padding-right: 25px;
+  }
+
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 .resultado {
-  width: 100%;
-  height: 100px;
-  border: 1px solid black;
-  margin-top: 5px;
-}
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+  }

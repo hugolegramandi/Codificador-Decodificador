@@ -4,29 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Contato</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="module" src="/js/script.js" defer></script>
 </head>
 <body>
     
     <header>
         <nav>
-            <h1>RESILIA/adote aqui</h1>
+            <h1>[RESILIA] PASSINHO DO ROMANO</h1>
                 <ul>
                     <li><a href="index.html"> HOME </a></li>
-                    <li><a href="sobre.html"> SOBRE </a></li>
-                    <li><a href="contato.html"> CONTATO </a></li>
+                    <li><a href="https://github.com/hugolegramandi/Codificador-Decodificador"> REPOSITÓRIO GITHUB </a></li>
                 </ul>
         </nav>
     </header>
 
     <main>
-        <div class="titulo">Olá, mundo!</div>
+        <form>
+                <div>
+                    <p class="texto">Insira uma mensagem!</p>
+                </div>
+
+                <div>
+                    <input type="text" id="mensagem" placeholder="Mensagem Secreta" class="input-padrão" required>
+                </div>
+
+                <div>
+                    <p class="texto">Escolha o tipo de criptografia</p>
+                </div>
+                <div>
+                    <label for="cifra" id="labelCifra" class="input-padrão">
+                        <input type="radio" name="escolha" id="cifra" value="Cifra de César">Cifra de César
+                    </label>              
+                    <label for="base64" id="labelBase" class="input-padrão">
+                        <input type="radio" name="escolha" id="base64" value="Base64"> Base64
+                    </label>
+                </div>
+                <div class="incremento" id="divIncremento">
+                    <label for="incremento" class="input-padrão">Informe incremento!</label>   
+                    <input type="number" name="incremento" id="incremento" min='1' max="10">
+                </div> 
+
+                <div>
+                    <p class="texto">Codificar ou Decodificar</p>
+                </div>
+                <div>
+                    <label for="codificar" id="cod" class="input-padrão">
+                        <input type="radio" name="escolhaFinal" id="codificar">
+                        Codificar
+                    </label>              
+                    <label for="decodificar" id="decod" class="input-padrão">
+                        <input type="radio" name="escolhaFinal" id="decodificar"> 
+                        Decodificar
+                    </label>
+                </div>
+                
+                <div>
+                    <button class="btn" id="btn"><span> Codar </span></button>
+                </div>
+                <div>
+                    <p class="resultado"></p>
+                </div>
+        </form>
     </main>
 
     <footer>
-        <p class="copyright">&copy; Copyright Hugo Legramandi - 2021</p>
+        <p class="copyright">&copy; Copyright Hugo Legramandi - 2022</p>
     </footer>
 
 </body>
